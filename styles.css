@@ -19,6 +19,7 @@ body {
     color: #111;
     line-height: 1.8;
     letter-spacing: 0.3px;
+    border: 1px solid #e6e6e6;
 }
 
 /* NAVBAR */
@@ -50,6 +51,21 @@ body {
     color: #111;
     font-size: 13px;
     letter-spacing: 1px;
+    position: relative;
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: #111;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 /* HERO */
@@ -79,7 +95,7 @@ body {
 /* SECTIONS */
 .section {
     scroll-margin-top: 140px;
-    max-width: 900px;
+    max-width: 880px;
     margin: auto;
     padding: 160px 20px;
 }
@@ -93,6 +109,7 @@ body {
 .section-text {
     font-size: 16px;
     line-height: 1.8;
+    max-width: 720px;
 }
 
 /* SKILLS */
