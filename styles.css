@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Praline Amaretto";
+    src: url("fonts/PralineAmaretto-Regular.ttf") format("truetype");
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    position: fixed;
+    width: 100%;
+    background: #fafafa;
+}
+
+.nav-logo {
+    font-family: "Praline Amaretto", serif;
+    font-size: 22px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-name {
+    font-family: "Praline Amaretto", serif;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.hero-tagline {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 120px 20px;
+}
+
+.section-title {
+    font-family: "Praline Amaretto", serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section-text {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTACT */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: 1px solid #111;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #111;
+    color: #fff;
+}
+
+.contact-email {
+    margin-top: 30px;
+    font-size: 14px;
+}
