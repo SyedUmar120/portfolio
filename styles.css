@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -75,6 +78,7 @@ body {
 
 /* SECTIONS */
 .section {
+    scroll-margin-top: 140px;
     max-width: 900px;
     margin: auto;
     padding: 160px 20px;
