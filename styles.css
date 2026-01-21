@@ -14,16 +14,21 @@ body {
     font-family: Arial, sans-serif;
     background: #fafafa;
     color: #111;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
 }
 
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 30px 60px;
+    align-items: center;
+    padding: 40px 80px;
     position: fixed;
     width: 100%;
+    top: 0;
     background: #fafafa;
+    z-index: 100;
 }
 
 .nav-logo {
@@ -40,41 +45,45 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #111;
-    font-size: 14px;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 /* HERO */
 .hero {
-    height: 100vh;
+   height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 80px;
 }
 
 .hero-name {
     font-family: "Praline Amaretto", serif;
-    font-size: 80px;
-    margin-bottom: 10px;
+    font-size: 96px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
 
 .hero-tagline {
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /* SECTIONS */
 .section {
     max-width: 900px;
     margin: auto;
-    padding: 120px 20px;
+    padding: 160px 20px;
 }
 
 .section-title {
-    font-family: "Praline Amaretto", serif;
-    font-size: 36px;
-    margin-bottom: 30px;
+   font-family: "Praline Amaretto", serif;
+    font-size: 42px;
+    margin-bottom: 50px;
 }
 
 .section-text {
@@ -90,14 +99,16 @@ body {
 }
 
 .skill-card {
-    border: 1px solid #ddd;
-    padding: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
     text-align: center;
-    transition: 0.3s;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
+   transform: translateY(-6px);
 }
 
 /* CONTACT */
@@ -110,17 +121,18 @@ body {
 
 .contact-form input,
 .contact-form textarea {
-    padding: 12px;
+  padding: 16px;
     border: 1px solid #ccc;
     font-size: 14px;
+    background: transparent;
 }
 
 .contact-form button {
-    padding: 12px;
+   padding: 14px;
     border: 1px solid #111;
     background: transparent;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .contact-form button:hover {
