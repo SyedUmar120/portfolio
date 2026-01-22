@@ -1,3 +1,6 @@
+When element comes into view → add class "show"
+
+
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach(entry => {
