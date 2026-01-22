@@ -181,6 +181,10 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* FOOTER */
 .footer {
     padding: 60px 20px;
