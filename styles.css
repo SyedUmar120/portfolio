@@ -221,3 +221,19 @@ body {
     color: #111;
     border: 1px solid #111;
 }
+/* REVEAL */
+.reveal-text {
+    overflow: hidden;
+}
+
+.reveal-text span {
+    display: inline-block;
+    transform: translateY(120%);
+    animation: textReveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes textReveal {
+    to {
+        transform: translateY(0);
+    }
+}
