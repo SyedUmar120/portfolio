@@ -1,14 +1,18 @@
-const observer = new IntersectionObserver(
-    (entries) => {
+const faders = document.querySelectorAll('.fade-up');
+
+const appearOnScroll = new IntersectionObserver(
+    function (entries, observer) {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
         });
     },
-    { threshold: 0.15 }
+    {
+        threshold: 0.2
+    }
 );
 
-document.querySelectorAll(".fade-up").forEach(el => {
-    observer.observe(el);
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
 });
