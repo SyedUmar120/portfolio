@@ -215,6 +215,11 @@ body {
     text-transform: uppercase;
     transition: background 0.3s ease, color 0.3s ease;
 }
+.cta-button {
+    position: relative;
+    transition: transform 0.25s ease;
+}
+
 
 .cta-button:hover {
     background: transparent;
