@@ -174,7 +174,7 @@ body {
 .fade-up {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade.show {
